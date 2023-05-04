@@ -12,15 +12,15 @@
     
     <!-- Bootstrap core CSS -->
     <link href="<?=base_url('css/bootstrap.min.css')?>" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">-->
 
-    <!--<link href="<?=base_url('icons/font/bootstrap-icons.min.css')?>" rel="stylesheet">-->
+    
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="<?=base_url('css/font-awesome.min.css')?>" rel="stylesheet">
-
-    <!--<link href="<?=base_url('icons/font/fonts/bootstrap-icons.woff')?>" rel="stylesheet">-->
-    <!--<link href="<?=base_url('icons/font/fonts/bootstrap-icons.woff2')?>" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="<?=base_url('icons/font/font-awesome.min.css')?>" rel="stylesheet">
+    <link href="<?=base_url('icons/font/bootstrap-icons.min.css')?>" rel="stylesheet">
+    <link href="<?=base_url('icons/font/fonts/bootstrap-icons.woff')?>" rel="stylesheet">
+    <link href="<?=base_url('icons/font/fonts/bootstrap-icons.woff2')?>" rel="stylesheet">
     
     <link href="<?=base_url('extras/sticky-footer-navbar.css')?>" rel="stylesheet">
     
