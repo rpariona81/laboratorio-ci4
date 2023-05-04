@@ -17,14 +17,17 @@
     
 
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <link href="<?=base_url('icons/font/font-awesome.min.css')?>" rel="stylesheet">
-    <link href="<?=base_url('icons/font/bootstrap-icons.min.css')?>" rel="stylesheet">
-    <link href="<?=base_url('icons/font/fonts/bootstrap-icons.woff')?>" rel="stylesheet">
-    <link href="<?=base_url('icons/font/fonts/bootstrap-icons.woff2')?>" rel="stylesheet">
-    
+    <link href="<?=base_url('font-awesome/4.7.0/css/font-awesome.min.css')?>" rel="stylesheet">
+    <!--<link href="< ?=base_url('font-awesome/4.7.0/fonts/font-awesome.webfont.woof2')?>" rel="stylesheet">
+    <link href="< ?=base_url('icons/font/bootstrap-icons.min.css')?>" rel="stylesheet">
+    <link href="< ?=base_url('icons/font/fonts/bootstrap-icons.woff')?>" rel="stylesheet">
+    <link href="< ?=base_url('icons/font/fonts/bootstrap-icons.woff2')?>" rel="stylesheet">-->
+    <link href="<?=base_url('personal/mystyle.css')?>" rel="stylesheet">
     <link href="<?=base_url('extras/sticky-footer-navbar.css')?>" rel="stylesheet">
+
     
-    <style>
+    
+    <!--<style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -38,7 +41,7 @@
           font-size: 3.5rem;
         }
       }
-    </style>
+    </style>-->
 
     <!--https://www.tutorialrepublic.com/font-awesome-icons-classes.php-->
     <!-- Custom styles for this template -->
