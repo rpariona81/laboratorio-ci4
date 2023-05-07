@@ -31,6 +31,30 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'AuthController::index');
+$routes->post('/logout', 'AuthController::logout');
+
+$routes->group('admin', static function ($routes) {
+    //Inicio
+    $routes->get('inicio', 'AdminController::index');
+    
+    $routes->group('students', static function ($routes) {
+        $routes->get('list', 'AdminController::verEstudiantes');
+    });
+    
+    $routes->group('teachers', static function ($routes) {
+        $routes->get('list', 'AdminController::verDocentes');
+    });
+    
+    $routes->group('vacantes', static function ($routes) {
+        $routes->get('list', 'AdminController::verConvocatorias');
+    });
+
+    $routes->group('reportes', static function ($routes) {
+        $routes->get('programas', 'AdminController::verReportePrograma');
+        $routes->get('fechas', 'AdminController::verReporteFechas');
+    });
+    
+});
 
 /*
  * --------------------------------------------------------------------

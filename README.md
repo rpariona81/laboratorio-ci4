@@ -55,3 +55,6 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 ## Font Awesome Icons
 https://www.tutorialrepublic.com/font-awesome-icons-classes.php
+
+## Font Awesome 5
+https://www.w3schools.com/icons/icons_reference.asp
