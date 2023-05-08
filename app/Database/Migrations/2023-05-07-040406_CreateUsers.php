@@ -4,12 +4,12 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreatePeople extends Migration
+class CreateUsers extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'people_id' => [
+            'id' => [
                 'type'           => 'BIGINT',
                 'constraint'     => 5,
                 'unsigned'       => true,
@@ -71,13 +71,14 @@ class CreatePeople extends Migration
                 'constraint' => '50',
                 'null' => true,
             ],
+            
         ]);
-        $this->forge->addKey('people_id', true);
-        $this->forge->createTable('t_people');
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('t_users');
     }
 
     public function down()
     {
-        $this->forge->dropTable('t_people');
+        $this->forge->dropTable('t_users');
     }
 }

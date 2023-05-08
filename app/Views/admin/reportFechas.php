@@ -4,7 +4,7 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <br />
-        <h1 class="display-4">Reporte por programa de estudios</h1>
+        <h1 class="display-4">Reporte por rango de fechas.</h1>
     </div>
 </div>
     <?= $this->section('javascript') ?>
