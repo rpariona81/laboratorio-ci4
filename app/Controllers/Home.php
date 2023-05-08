@@ -8,7 +8,8 @@ class Home extends BaseController
     {
         //return view('welcome_message');
         //return view('shared/index');
-        return view('tables');
+        //return view('tables');
+        return view('index');
     }
 }
 

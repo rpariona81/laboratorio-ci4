@@ -25,7 +25,7 @@
                             <div class="card shadow-lg border-0 rounded-lg mt-4">
                                 <!--<div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>-->
                                 <div class="card-header">
-                                    <h3>Bienvenido</h3>
+                                    <h3>Bienvenido(a)</h3>
                                     <p class="font-weight-light my-4">Ingresa tu usuario y contraseña para iniciar sesión</p>
                                 </div>
                                 <div class="card-body">
@@ -39,7 +39,7 @@
                                             <label for="inputPassword">Contraseña</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center mt-4 mb-0">
-                                            <a class="btn btn-primary btn-lg col-lg-5" href="index.html">Ingresar</a>
+                                        <input class="btn btn-primary" id="btnLogin" type="submit" value="Ingresar"></input>
                                         </div>
                                     </form>
                                 </div>

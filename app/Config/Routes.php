@@ -33,6 +33,9 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'AuthController::index');
 $routes->post('/logout', 'AuthController::logout');
 
+$routes->get('/wp-login', 'AuthController::loginUser');
+$routes->get('/wp-admin', 'AuthController::loginAdmin');
+
 $routes->group('admin', static function ($routes) {
     //Inicio
     $routes->get('inicio', 'AdminController::index');
