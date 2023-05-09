@@ -58,3 +58,6 @@ https://www.tutorialrepublic.com/font-awesome-icons-classes.php
 
 ## Font Awesome 5
 https://www.w3schools.com/icons/icons_reference.asp
+
+## navbar link colors
+https://stackoverflow.com/questions/48735679/bootstrap-change-navbar-link-colors

@@ -35,11 +35,11 @@
                                             <label for="inputUser">Usuario</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputPassword" type="password" placeholder="Contraseña" required/>
+                                            <input class="form-control" id="inputPassword" type="password" placeholder="Contraseña" required />
                                             <label for="inputPassword">Contraseña</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center mt-4 mb-0">
-                                        <input class="btn btn-primary" id="btnLogin" type="submit" value="Ingresar"></input>
+                                            <input class="btn btn-primary" id="btnLogin" type="submit" value="Ingresar"></input>
                                         </div>
                                     </form>
                                 </div>
@@ -49,16 +49,12 @@
                 </div>
             </main>
         </div>
+        <br/>
         <div id="layoutAuthentication_footer">
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
-                        </div>
+                        <div class="text-muted">Copyright &copy; IESTP Ricardo Ramos Plata</div>
                     </div>
                 </div>
             </footer>

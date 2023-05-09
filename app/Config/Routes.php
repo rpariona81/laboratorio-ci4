@@ -36,9 +36,24 @@ $routes->post('/logout', 'AuthController::logout');
 $routes->get('/wp-login', 'AuthController::loginUser');
 $routes->get('/wp-admin', 'AuthController::loginAdmin');
 
+$routes->group('users', static function ($routes) {
+    //Inicio
+    $routes->get('', 'UserController::index');
+    $routes->get('perfil', 'UserController::verPerfil');
+    
+    $routes->group('offers', static function ($routes) {
+        $routes->get('', 'UserController::verConvocatorias');
+        $routes->get('/(:any)', 'UserController::verDetalle');
+        $routes->post('/(:any)', 'UserController::postular');
+        $routes->post('/loadfile', 'UserController::cargaCV');
+    });
+    
+});
+
+
 $routes->group('admin', static function ($routes) {
     //Inicio
-    $routes->get('inicio', 'AdminController::index');
+    $routes->get('', 'AdminController::index');
     
     $routes->group('students', static function ($routes) {
         $routes->get('list', 'AdminController::verEstudiantes');

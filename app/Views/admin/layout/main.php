@@ -34,10 +34,10 @@
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <strong><?= $this->renderSection('userlogged') ? : 'Usuario - Rol' ?>&nbsp;&nbsp;</strong><i class="fas fa-user fa-fw"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle text-black" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong><?= $this->renderSection('userlogged') ?: 'Usuario - Rol' ?>&nbsp;&nbsp;</strong><i class="fas fa-user fa-fw"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#!">Mi perfil</a></li>
                     <li><a class="dropdown-item" href="#!">Cambiar clave</a></li>
                     <li>
@@ -66,7 +66,7 @@
                         <!--<img class="img login-logo rounded-circle mb-0" src="img/logoFondoBlack.png" height="50" />
                         <div class="sb-sidenav-menu-heading">Core</div>-->
                         <img class="img login-logo rounded-circle mb-0" src="<?= base_url('img/logoFondoBlack.png') ?>" height="50" />
-                        <a class="nav-link" href="/admin/inicio">
+                        <a class="nav-link active" href="/admin/">
                             <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
                             Inicio
                         </a>
