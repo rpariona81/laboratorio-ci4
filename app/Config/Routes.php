@@ -34,6 +34,10 @@ $routes->get('/login', 'AuthController::index');
 $routes->post('/logout', 'AuthController::logout');
 
 $routes->get('/wp-login', 'AuthController::loginUser');
+$routes->get('/form', 'AuthController::accedeUser');
+$routes->post('/form', 'AuthController::accedeUser');
+
+
 $routes->get('/wp-admin', 'AuthController::loginAdmin');
 
 $routes->group('users', static function ($routes) {

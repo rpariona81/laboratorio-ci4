@@ -29,19 +29,21 @@
                                     <p class="font-weight-light my-4">Ingresa tu usuario y contraseña para iniciar sesión</p>
                                 </div>
                                 <div class="card-body">
-                                    <form>
+                                    <?= validation_list_errors() ?>
+                                    <?= form_open('form') ?>
+
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputUser" type="text" placeholder="Usuario" required />
+                                            <input class="form-control" id="username" type="text" placeholder="Usuario" value="<?= set_value('username') ?>" size="50" required />
                                             <label for="inputUser">Usuario</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputPassword" type="password" placeholder="Contraseña" required />
+                                            <input class="form-control" id="password" type="password" placeholder="Contraseña" value="<?= set_value('password') ?>" size="50" required />
                                             <label for="inputPassword">Contraseña</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center mt-4 mb-0">
                                             <input class="btn btn-primary" id="btnLogin" type="submit" value="Ingresar"></input>
                                         </div>
-                                    </form>
+                                        <?= form_close() ?>
                                 </div>
                             </div>
                         </div>

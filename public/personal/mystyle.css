@@ -12,11 +12,11 @@
     }
 }
 
-nav .navbar-nav li a{
-  color: rgba(253, 255, 134, 0.884) !important;
-  font-weight: 500;
-  }
+nav .navbar-nav li a {
+    color: rgba(253, 255, 134, 0.884) !important;
+    font-weight: 500;
+}
 
-  nav .navbar-nav li a:hover{
+nav .navbar-nav li a:hover {
     color: white !important;
-    }
+}
