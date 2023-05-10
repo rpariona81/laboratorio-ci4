@@ -10,7 +10,7 @@ class UserController extends BaseController
     {
         //
         $data = [];
-        $data['rol'] = 'estudiante';
+        $data['rol'] = 'docente';
         return view('users/home', $data);
 
     }

@@ -35,10 +35,9 @@
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-black" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <strong><?= $this->renderSection('userlogged') ?: 'Usuario - Rol' ?>&nbsp;&nbsp;</strong><i class="fas fa-user fa-fw"></i>
+                    <strong><?= $this->renderSection('userlogged') ?: 'Administrador' ?>&nbsp;&nbsp;</strong><i class="fas fa-user fa-fw"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Mi perfil</a></li>
                     <li><a class="dropdown-item" href="#!">Cambiar clave</a></li>
                     <li>
                         <hr class="dropdown-divider" />
@@ -95,7 +94,7 @@
                         </div>
                         <a class="nav-link" href="#">
                             <div class="sb-nav-link-icon"><i class="fas fa-address-card"></i></div>
-                            Mi perfil
+                            Datos del administrador
                         </a>
                         <form class="ml-4">
                             &nbsp;&nbsp;&nbsp;<input class="btn btn-primary" id="btnLogout" type="submit" value="Cerrar sesión"></input>
