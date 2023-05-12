@@ -29,15 +29,21 @@
                                     <p class="font-weight-light my-4">Ingresa tu usuario y contraseña para iniciar sesión</p>
                                 </div>
                                 <div class="card-body">
-                                    <?= validation_list_errors() ?>
-                                    <?= form_open('form') ?>
+                                    <!--< ?= dd(session('msg')) ?>-->
+                                    <?php if(session('msg')): ?>
+                                        <div class="message btn-warning">
+                                            <?=session('msg.body')?>
+                                        </div>
+                                    <?php endif; ?>
+                                    <hr>
+                                    <?= form_open('') ?>
 
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="username" type="text" placeholder="Usuario" value="<?= set_value('username') ?>" size="50" required />
+                                            <input class="form-control" id="username" name="username" type="text" placeholder="Usuario" value="<?= set_value('username') ?>" size="50" required />
                                             <label for="inputUser">Usuario</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="password" type="password" placeholder="Contraseña" value="<?= set_value('password') ?>" size="50" required />
+                                            <input class="form-control" id="password" name="password" type="password" placeholder="Contraseña" value="<?= set_value('password') ?>" size="50" required />
                                             <label for="inputPassword">Contraseña</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center mt-4 mb-0">

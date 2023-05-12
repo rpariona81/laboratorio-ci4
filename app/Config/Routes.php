@@ -34,13 +34,16 @@ $routes->get('/login', 'AuthController::index');
 $routes->post('/logout', 'AuthController::logout');
 
 $routes->get('/wp-login', 'AuthController::loginUser');
-$routes->get('/form', 'AuthController::accedeUser');
-$routes->post('/form', 'AuthController::accedeUser');
+//$routes->get('/form', 'AuthController::accedeUser');
+$routes->post('/wp-login', 'AuthController::accedeUser');
 
 
 $routes->get('/wp-admin', 'AuthController::loginAdmin');
 
-$routes->group('users', static function ($routes) {
+$routes->get('/logout', 'AuthController::logout');
+$routes->post('/logout', 'AuthController::logout');
+
+$routes->group('users', ['namespace' => 'App\Controllers\User', 'filter' => 'auth'], function ($routes) {
     //Inicio
     $routes->get('', 'UserController::index');
     $routes->get('perfil', 'UserController::verPerfil');
@@ -55,7 +58,8 @@ $routes->group('users', static function ($routes) {
 });
 
 
-$routes->group('admin', static function ($routes) {
+//$routes->group('admin', ['filter' => 'auth'], static function ($routes) {
+$routes->group('admin', ['namespace' => 'App\Controllers\Admin', 'filter' => 'auth'], function ($routes) {
     //Inicio
     $routes->get('', 'AdminController::index');
     

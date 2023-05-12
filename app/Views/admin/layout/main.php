@@ -43,7 +43,7 @@
                         <hr class="dropdown-divider" />
                     </li>
                     <!-- Boton salir-->
-                    <form class="text-center ml-4">
+                    <form class="text-center ml-4" action="/logout">
                         <input class="btn btn-primary" id="btnLogout" type="submit" value="Cerrar sesión"></input>
                     </form>
 
@@ -96,7 +96,7 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-address-card"></i></div>
                             Datos del administrador
                         </a>
-                        <form class="ml-4">
+                        <form class="ml-4" action="/logout">
                             &nbsp;&nbsp;&nbsp;<input class="btn btn-primary" id="btnLogout" type="submit" value="Cerrar sesión"></input>
                         </form>
 

@@ -3,11 +3,13 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Libraries\LoginLib;
 use CodeIgniter\HTTP\Request;
 
 class AuthController extends BaseController
 {
 
+    
     protected $helpers = ['form'];
 
 
@@ -20,25 +22,40 @@ class AuthController extends BaseController
     public function loginUser()
     {
         //
-        if (session_status() === PHP_SESSION_NONE) {
+        /*if (session_status() === PHP_SESSION_NONE) {
             session_start();
-        }
+        }*/
         return view('auth/loginUser');
     }
 
     public function accedeUser()
     {
-        if (! $this->request->is('post')) {
+        //dd($this->request->getPost());
+        /*if (! $this->request->is('post')) {
             return redirect()->to('/wp-login');
-        }
+        }*/
 
         //$rules = [];
 
         /*if (! $this->validate($rules)) {
             return redirect()->to('/wp-login');
         }*/
-        return redirect()->to('/users');
+        //return redirect()->to('/users');
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+        //dd($username);
+        //dd($password);
+        //return redirect()->to('/');
+        $util = new LoginLib();
+        $checkUser = $util->getLoginUser($username, $password);
+        if($checkUser['check']){
+            //dd($util->getLoginUser($username, $password));
+            return redirect()->to('/users')->with('msg',$checkUser['msg']);
+        }else{
+            return redirect()->to(current_url());
+        }
     }
+
     public function ingresaUser(Request $request)
     {
         $request->getVar(null, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -88,5 +105,11 @@ class AuthController extends BaseController
     {
         //
         return view('auth/loginAdmin');
+    }
+
+    public function logout()
+    {
+        session()->destroy();
+        return redirect()->to('/');
     }
 }

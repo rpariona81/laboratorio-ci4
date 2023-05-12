@@ -61,7 +61,7 @@
                             </a>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex" action="/logout">
                         <button class="btn btn-warning" type="submit">Cerrar sesión</button>
                     </form>
                 </div>
